@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Protfolio - Hajar",
   description: "Created by Hajar Ait abdielmomin",
+    icons: {
+        icon: '/logo-tab.ico',
+    },
 };
 
 export default function RootLayout({
