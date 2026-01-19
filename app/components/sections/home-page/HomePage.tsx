@@ -1,6 +1,7 @@
 // app/components/sections/home-page/HomePage.tsx
 import Image from 'next/image';
 import { FaLinkedin, FaBehance, FaGithub, FaMediumM } from 'react-icons/fa';
+import Link from "next/link";
 
 export default function HomePage() {
     return (
@@ -16,14 +17,14 @@ export default function HomePage() {
                             <span className="text-gray-900">Software Engineer</span>
                         </h1>
 
-                        <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-                            Contact
-                        </button>
+                        <Link href="./resume/Hajar_Ait Abdielmomin_CV.pdf" download="Hajar_CV" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors" >
+                            Download Resume
+                        </Link>
 
                         {/* Social Icons */}
-                        <div className="flex items-center gap-4 pt-4">
+                        <div className="flex items-center gap-4 pt-8">
                             <a
-                                href="www.linkedin.com/in/hajar-ait-abdielmomin-98638421b"
+                                href="https://linkedin.com/in/hajar-ait-abdielmomin-98638421b"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-700 hover:text-blue-600 transition-colors"
