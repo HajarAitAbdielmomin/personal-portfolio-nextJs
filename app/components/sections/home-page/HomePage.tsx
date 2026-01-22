@@ -60,7 +60,7 @@ export default function HomePage() {
                             <div className="relative w-80 h-80 rounded-full overflow-hidden">
                                 <Image
                                     src="/profile.jpg" // Add your image to public folder
-                                    alt="Marlon - Web Designer"
+                                    alt="AitHajar"
                                     fill
                                     className="object-cover"
                                     priority

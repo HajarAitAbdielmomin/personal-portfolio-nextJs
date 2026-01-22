@@ -1,13 +1,20 @@
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function Header() {
     return (
-        <header className="w-full py-6 px-8">
-            <nav className="max-w-7xl mx-auto flex items-center justify-between">
+        <header className="w-full py-6 px-8 h-20">
+            <nav className="max-w-7xl mx-auto flex items-center justify-between h-full">
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-bold text-gray-900">
-                    Marlon
-                </Link>
+                <div className="h-12 flex items-center">
+                    <Image
+                        src="/images/hajar-logo.png"
+                        alt="hajar logo"
+                        width={100}
+                        height={2}
+                        className="object-contain"
+                    />
+                </div>
 
                 {/* Navigation Links */}
                 <ul className="flex items-center gap-8">
