@@ -17,7 +17,7 @@ export default function HomePage() {
                             <span className="text-gray-900">Software Engineer</span>
                         </h1>
 
-                        <Link href="./resume/Hajar_Ait Abdielmomin_CV.pdf" download="Hajar_CV" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors" >
+                        <Link href="/resume/cv.pdf" download="Hajar_CV" className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors" >
                             Download Resume
                         </Link>
 
