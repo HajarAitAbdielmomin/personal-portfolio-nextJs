@@ -8,11 +8,11 @@ export default function HomePage() {
         <section className="w-full min-h-screen flex items-start justify-center pt-20">
                 <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center p-10">
                     {/* Left Content */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 animate-fade-in-left">
                         <h1 className="text-5xl lg:text-6xl font-bold">
                             Hi,
                             <br />
-                            I&#39;m <span className="text-blue-500">Hajar</span>
+                            I&#39;m <span className="text-blue-500 animate-pulse">Hajar</span>
                             <br />
                             <span className="text-gray-900">Software Engineer</span>
                         </h1>
@@ -31,7 +31,7 @@ export default function HomePage() {
                         </Link>
 
                         {/* Social Icons */}
-                        <div className="flex items-center gap-4 pt-8">
+                        <div className="flex items-center gap-4 pt-8 animate-fade-in-up">
                             <a
                                 href="https://linkedin.com/in/hajar-ait-abdielmomin-98638421b"
                                 target="_blank"
@@ -68,15 +68,15 @@ export default function HomePage() {
                     </div>
 
                     {/* Right Content - Image */}
-                    <div className="flex justify-center lg:justify-end">
+                    <div className="flex justify-center lg:justify-end animate-fade-in-right">
                         <div className="relative">
                             {/* Blue blob background */}
-                            <div className="absolute inset-0 bg-blue-500 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] transform scale-110"></div>
+                            <div className="absolute inset-0 bg-blue-500 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] transform scale-110 animate-blob"></div>
 
                             {/* Profile Image */}
-                            <div className="relative w-80 h-80 rounded-full overflow-hidden">
+                            <div className="relative w-80 h-80 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300">
                                 <Image
-                                    src="/images/profile-photo.png" // Add your image to public folder
+                                    src="/images/profile-photo.png"
                                     alt="AitHajar"
                                     fill
                                     className="object-cover"
