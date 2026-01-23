@@ -2,13 +2,14 @@ import Image from 'next/image';
 
 interface EducationCardProps {
     logo: string;
-    schoolName: any;
+    schoolName: string;
     location: string;
     degree: string;
     major: string;
     startYear: string;
     endYear: string;
     isGraduated?: boolean;
+    footerText?: string;
 }
 
 export default function EducationCard({
@@ -20,6 +21,7 @@ export default function EducationCard({
                                           startYear,
                                           endYear,
                                           isGraduated = false,
+                                          footerText,
                                       }: EducationCardProps) {
     return (
         <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow">
@@ -65,7 +67,7 @@ export default function EducationCard({
             {/* Footer */}
             <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                 <div>
-                    <p className="text-sm text-gray-500">{startYear} - {endYear}</p>
+                    <p className="text-sm text-gray-500">{footerText || `${startYear} - ${endYear}`}</p>
                 </div>
             </div>
         </div>
