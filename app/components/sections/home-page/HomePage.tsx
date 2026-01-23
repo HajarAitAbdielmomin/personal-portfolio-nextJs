@@ -1,4 +1,3 @@
-// app/components/sections/home-page/HomePage.tsx
 import Image from 'next/image';
 import { FaLinkedin, FaHackerrank, FaGithub, FaMediumM } from 'react-icons/fa';
 import Link from "next/link";
