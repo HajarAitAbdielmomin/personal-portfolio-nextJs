@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 interface EducationCardProps {
     logo: string;
-    schoolName: string;
+    schoolName: any;
     location: string;
     degree: string;
     major: string;
