@@ -26,7 +26,7 @@ export default function EducationCard({
             {/* Header */}
             <div className="flex items-start justify-between mb-4">
                 {/* Logo */}
-                <div className="w-14 h-14  bg-gray-100 flex items-center justify-center overflow-hidden border-2 border-gray-200">
+                <div className="w-14 h-14   flex items-center justify-center overflow-hidden ">
                     <Image
                         src={logo}
                         alt={schoolName}
