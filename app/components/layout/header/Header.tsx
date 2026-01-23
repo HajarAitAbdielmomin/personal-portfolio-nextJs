@@ -18,14 +18,7 @@ export default function Header() {
 
                 {/* Navigation Links */}
                 <ul className="flex items-center gap-8">
-                    <li>
-                        <Link
-                            href="/"
-                            className="text-gray-900 font-medium hover:text-blue-600 transition-colors"
-                        >
-                            Home
-                        </Link>
-                    </li>
+
                     <li>
                         <Link
                             href="#about"
@@ -36,18 +29,42 @@ export default function Header() {
                     </li>
                     <li>
                         <Link
-                            href="#skills"
+                            href="#education"
                             className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
                         >
-                            Skills
+                            Education
                         </Link>
                     </li>
                     <li>
                         <Link
-                            href="#works"
+                            href="#internship"
                             className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
                         >
-                            Works
+                            Internships
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="#project"
+                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
+                        >
+                            Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="#certification"
+                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
+                        >
+                            Certifications
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="#skill"
+                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
+                        >
+                            Skills
                         </Link>
                     </li>
                     <li>
