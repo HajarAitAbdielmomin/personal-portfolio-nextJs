@@ -1,0 +1,3 @@
+/*
+* Moving to the internships part. we will base on this design offered in the uploaded image. we should create a card components in the ui folder for internship infomation and then use it in the main component 'Internship', so the information to mention are : position name, company name, internship duration(start/end dates), performed tasks, exploited technologies, and a place in the cards where to put images of the UIs of the work done during the internship
+* */
