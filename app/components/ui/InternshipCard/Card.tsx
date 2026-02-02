@@ -105,10 +105,10 @@ const InternshipCard: React.FC<InternshipCardProps> = ({
                 {/* Tasks section */}
                 {tasks.length > 0 && (
                     <div className="mb-4">
-                        <h4 className="text-sm font-semibold text-gray-900 mb-2">
+                        {/*    <h4 className="text-sm font-semibold text-gray-900 mb-2">
                             Completed Tasks:
                         </h4>
-                        <ul className="space-y-1">
+                               <ul className="space-y-1">
                             {tasks.map((task, index) => (
                                 <li
                                     key={index}
@@ -118,7 +118,7 @@ const InternshipCard: React.FC<InternshipCardProps> = ({
                                     <span>{task}</span>
                                 </li>
                             ))}
-                        </ul>
+                        </ul> */}
                     </div>
                 )}
 
