@@ -2,6 +2,8 @@ export interface Internship {
     id: string;
     position: string;
     company: string;
+    companyLogo: string;
+    location: string;
     startDate: string;
     endDate: string;
     tasks: string[];
@@ -16,6 +18,8 @@ export const internshipsData: Internship[] = [
         id: '1',
         position: 'UX/UI Design — Websites',
         company: 'Company Name 1',
+        companyLogo: '/images/company-logo-1.svg',
+        location: 'Morocco',
         startDate: 'Jan 2024',
         endDate: 'Mar 2024',
         status: 'completed',
@@ -37,6 +41,8 @@ export const internshipsData: Internship[] = [
         id: '2',
         position: 'UX/UI Design — Applications',
         company: 'Company Name 2',
+        companyLogo: '/images/company-logo-2.svg',
+        location: 'Remote',
         startDate: 'Apr 2024',
         endDate: 'Jun 2024',
         status: 'completed',
@@ -57,6 +63,8 @@ export const internshipsData: Internship[] = [
         id: '3',
         position: 'UX/UI Design — Animation',
         company: 'Company Name 3',
+        companyLogo: '/images/company-logo-3.svg',
+        location: 'Remote',
         startDate: 'Jul 2024',
         endDate: 'Aug 2024',
         status: 'in-progress',
@@ -76,6 +84,8 @@ export const internshipsData: Internship[] = [
         id: '4',
         position: 'UX/UI Design — Animation',
         company: 'Company Name 3',
+        companyLogo: '/images/company-logo-3.svg',
+        location: 'Remote',
         startDate: 'Jul 2024',
         endDate: 'Aug 2024',
         status: 'in-progress',

@@ -37,6 +37,8 @@ const Internships: React.FC = () => {
                                 key={index}
                                 position={internship.position}
                                 company={internship.company}
+                                location={internship.location}
+                                companyLogo={internship.companyLogo}
                                 startDate={internship.startDate}
                                 endDate={internship.endDate}
                                 tasks={internship.tasks}
