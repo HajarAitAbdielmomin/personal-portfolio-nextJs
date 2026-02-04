@@ -95,11 +95,16 @@ const InternshipCard: React.FC<InternshipCardProps> = ({
                     <span className="font-semibold">{endDate}</span>
                 </div>
 
-                {/* Description if provided */}
+                {/* Topic section - highlighted */}
                 {topic && (
-                    <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                        {topic}
-                    </p>
+                    <div className="mb-4 p-3 bg-blue-50 border-l-4 border-blue-500 rounded-r-lg">
+                        <h4 className="text-sm font-semibold text-blue-900 mb-1">
+                            Project Topic:
+                        </h4>
+                        <p className="text-sm text-blue-800 font-medium leading-relaxed">
+                            {topic}
+                        </p>
+                    </div>
                 )}
 
                 {/* Tasks section */}
