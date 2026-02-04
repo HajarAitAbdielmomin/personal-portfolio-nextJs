@@ -12,7 +12,7 @@ interface InternshipCardProps {
     technologies: string[];
     uiImages?: string[];
     status?: 'completed' | 'in-progress' | 'upcoming';
-    description?: string;
+    topic?: string;
 }
 
 const InternshipCard: React.FC<InternshipCardProps> = ({
@@ -26,7 +26,7 @@ const InternshipCard: React.FC<InternshipCardProps> = ({
                                                            technologies,
                                                            uiImages = [],
                                                            status = 'completed',
-                                                           description,
+                                                           topic,
                                                        }) => {
     const statusColors = {
         completed: 'bg-green-500',
@@ -61,8 +61,8 @@ const InternshipCard: React.FC<InternshipCardProps> = ({
                                 <Image
                                     src={companyLogo}
                                     alt={`${company} logo`}
-                                    width={20}
-                                    height={20}
+                                    width={40}
+                                    height={40}
                                     className="object-contain"
                                 />
                             )}
@@ -96,9 +96,9 @@ const InternshipCard: React.FC<InternshipCardProps> = ({
                 </div>
 
                 {/* Description if provided */}
-                {description && (
+                {topic && (
                     <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                        {description}
+                        {topic}
                     </p>
                 )}
 
