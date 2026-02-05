@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Header() {
     return (
-        <header className="w-full py-6 px-8 h-20 animate-slide-down">
+        <header className="fixed top-0 left-0 w-full py-6 px-8 h-20 bg-white shadow-sm z-50 animate-slide-down">
             <nav className="max-w-7xl mx-auto flex items-center justify-between h-full">
                 {/* Logo */}
                 <div className="h-12 flex items-center">
