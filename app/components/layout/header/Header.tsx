@@ -1,5 +1,13 @@
+"use client"
 import Link from 'next/link';
 import Image from "next/image";
+
+const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+};
 
 export default function Header() {
     return (
@@ -20,60 +28,60 @@ export default function Header() {
                 <ul className="flex items-center gap-8">
 
                     <li>
-                        <Link
-                            href="#about"
+                        <button
+                            onClick={() => scrollToSection('about')}
                             className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
                         >
                             About
-                        </Link>
+                        </button>
                     </li>
                     <li>
-                        <Link
-                            href="#education"
+                        <button
+                            onClick={() => scrollToSection('education')}
                             className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
                         >
                             Education
-                        </Link>
+                        </button>
                     </li>
                     <li>
-                        <Link
-                            href="#internship"
+                        <button
+                            onClick={() => scrollToSection('internship')}
                             className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
                         >
                             Internships
-                        </Link>
+                        </button>
                     </li>
                     <li>
-                        <Link
-                            href="#project"
+                        <button
+                            onClick={() => scrollToSection('project')}
                             className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
                         >
                             Projects
-                        </Link>
+                        </button>
                     </li>
                     <li>
-                        <Link
-                            href="#certification"
+                        <button
+                            onClick={() => scrollToSection('certification')}
                             className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
                         >
                             Certifications
-                        </Link>
+                        </button>
                     </li>
                     <li>
-                        <Link
-                            href="#skill"
+                        <button
+                            onClick={() => scrollToSection('skill')}
                             className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
                         >
                             Skills
-                        </Link>
+                        </button>
                     </li>
                     <li>
-                        <Link
-                            href="#contact"
+                        <button
+                            onClick={() => scrollToSection('contact')}
                             className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
                         >
                             Contact
-                        </Link>
+                        </button>
                     </li>
                 </ul>
             </nav>
