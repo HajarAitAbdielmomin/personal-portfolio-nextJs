@@ -46,6 +46,8 @@ const Internships: React.FC = () => {
                                 uiImages={internship.uiImages}
                                 status={internship.status}
                                 topic={internship.topic}
+                                width={internship.width}
+                                height={internship.height}
                             />
                         ))}
                     </div>
