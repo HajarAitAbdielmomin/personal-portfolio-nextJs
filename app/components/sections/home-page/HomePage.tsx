@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function HomePage() {
     return (
-        <section className="w-full min-h-screen flex items-start justify-center pt-20">
+        <section className="w-full min-h-screen flex items-start justify-center pt-20" id="about">
                 <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center p-10">
                     {/* Left Content */}
                     <div className="space-y-6 animate-fade-in-left">
