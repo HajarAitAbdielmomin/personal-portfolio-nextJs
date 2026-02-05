@@ -1,4 +1,5 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import Image from 'next/image';
 
 interface InternshipCardProps {
@@ -28,6 +29,10 @@ const InternshipCard: React.FC<InternshipCardProps> = ({
                                                            status = 'completed',
                                                            topic,
                                                        }) => {
+    const [currentPage, setCurrentPage] = useState(0);
+    const imagesPerPage = 3;
+    const totalPages = Math.ceil(uiImages.length / imagesPerPage);
+    
     const statusColors = {
         completed: 'bg-green-500',
         'in-progress': 'bg-blue-600',
@@ -149,23 +154,53 @@ const InternshipCard: React.FC<InternshipCardProps> = ({
                 {/* UI Images section */}
                 {uiImages.length > 0 && (
                     <div>
-                        <h4 className="text-sm font-semibold text-gray-900 mb-3">
-                            Work Examples:
-                        </h4>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                            {uiImages.map((image, index) => (
-                                <div
-                                    key={index}
-                                    className="relative h-40 bg-gray-200 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-                                >
-                                    <Image
-                                        src={image}
-                                        alt={`UI work ${index + 1}`}
-                                        fill
-                                        className="object-cover"
-                                    />
+                        <div className="flex items-center justify-between mb-3">
+                            <h4 className="text-sm font-semibold text-gray-900">
+                                Part of the work :
+                            </h4>
+                            {totalPages > 1 && (
+                                <div className="flex items-center gap-2">
+                                    <button
+                                        onClick={() => setCurrentPage(prev => Math.max(0, prev - 1))}
+                                        disabled={currentPage === 0}
+                                        className="p-1 rounded-full hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
+                                    >
+                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                                        </svg>
+                                    </button>
+                                    <span className="text-xs text-gray-500">
+                                        {currentPage + 1} / {totalPages}
+                                    </span>
+                                    <button
+                                        onClick={() => setCurrentPage(prev => Math.min(totalPages - 1, prev + 1))}
+                                        disabled={currentPage === totalPages - 1}
+                                        className="p-1 rounded-full hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
+                                    >
+                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </button>
                                 </div>
-                            ))}
+                            )}
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                            {uiImages
+                                .slice(currentPage * imagesPerPage, (currentPage + 1) * imagesPerPage)
+                                .map((image, index) => (
+                                    <div
+                                        key={currentPage * imagesPerPage + index}
+                                        className="relative h-40 bg-gray-200 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+                                    >
+                                        <Image
+                                            src={image}
+                                            alt={`UI work ${currentPage * imagesPerPage + index + 1}`}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                 )}
