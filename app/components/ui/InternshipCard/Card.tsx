@@ -14,6 +14,8 @@ interface InternshipCardProps {
     uiImages?: string[];
     status?: 'completed' | 'in-progress' | 'upcoming';
     topic?: string;
+    width: number;
+    height: number;
 }
 
 const InternshipCard: React.FC<InternshipCardProps> = ({
@@ -28,6 +30,8 @@ const InternshipCard: React.FC<InternshipCardProps> = ({
                                                            uiImages = [],
                                                            status = 'completed',
                                                            topic,
+                                                           width,
+                                                           height
                                                        }) => {
     const [currentPage, setCurrentPage] = useState(0);
     const imagesPerPage = 3;
@@ -66,8 +70,8 @@ const InternshipCard: React.FC<InternshipCardProps> = ({
                                 <Image
                                     src={companyLogo}
                                     alt={`${company} logo`}
-                                    width={40}
-                                    height={40}
+                                    width={width}
+                                    height={height}
                                     className="object-contain"
                                 />
                             )}
