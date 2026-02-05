@@ -154,6 +154,19 @@
   animation: slide-down 0.8s ease-out 0.2s both;
 }
 
+.animate-scroll {
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
