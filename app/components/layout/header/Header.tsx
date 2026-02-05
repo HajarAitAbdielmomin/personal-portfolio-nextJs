@@ -30,7 +30,7 @@ export default function Header() {
                     <li>
                         <button
                             onClick={() => scrollToSection('about')}
-                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
+                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             About
                         </button>
@@ -38,7 +38,7 @@ export default function Header() {
                     <li>
                         <button
                             onClick={() => scrollToSection('education')}
-                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
+                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             Education
                         </button>
@@ -46,7 +46,7 @@ export default function Header() {
                     <li>
                         <button
                             onClick={() => scrollToSection('internship')}
-                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
+                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             Internships
                         </button>
@@ -54,7 +54,7 @@ export default function Header() {
                     <li>
                         <button
                             onClick={() => scrollToSection('project')}
-                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
+                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             Projects
                         </button>
@@ -62,7 +62,7 @@ export default function Header() {
                     <li>
                         <button
                             onClick={() => scrollToSection('certification')}
-                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
+                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             Certifications
                         </button>
@@ -70,7 +70,7 @@ export default function Header() {
                     <li>
                         <button
                             onClick={() => scrollToSection('skill')}
-                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
+                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             Skills
                         </button>
@@ -78,7 +78,7 @@ export default function Header() {
                     <li>
                         <button
                             onClick={() => scrollToSection('contact')}
-                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors"
+                            className="text-gray-700 font-medium hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             Contact
                         </button>
