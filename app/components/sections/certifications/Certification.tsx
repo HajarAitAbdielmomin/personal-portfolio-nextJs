@@ -1,9 +1,35 @@
 "use client"
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import CertificationCard from '@/app/components/ui/CertificationCard/Card';
 import { certificationsData } from '@/app/components/sections/certifications/certificationsData';
 
 const Certifications: React.FC = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [autoplayDelay, setAutoplayDelay] = useState(3000);
+    const cardsPerView = 3;
+    const totalSlides = Math.ceil(certificationsData.length / cardsPerView);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % totalSlides);
+        }, autoplayDelay);
+        return () => clearInterval(interval);
+    }, [totalSlides, autoplayDelay]);
+
+    const handlePrev = () => {
+        setAutoplayDelay(7000);
+        setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
+    };
+
+    const handleNext = () => {
+        setAutoplayDelay(7000);
+        setCurrentIndex((prev) => (prev + 1) % totalSlides);
+    };
+
+    const handleDotClick = (index: number) => {
+        setAutoplayDelay(7000);
+        setCurrentIndex(index);
+    };
     return (
         <section className="py-20 px-6 md:px-12 bg-linear-to-b from-white via-blue-50/30 to-white dark:from-gray-50 dark:via-blue-100 dark:to-gray-50">
                 {/* Styled horizontal line */}
@@ -27,26 +53,67 @@ const Certifications: React.FC = () => {
                     <span className="block w-16 h-1 bg-blue-500 mx-auto mt-2"></span>
                 </div>
 
-                {/* Certifications Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {certificationsData.map((certification) => (
-                        <CertificationCard
-                            key={certification.id}
-                            id={certification.id}
-                            organizationName={certification.organizationName}
-                            organizationLogo={certification.organizationLogo}
-                            courseName={certification.courseName}
-                            certificationImage={certification.certificationImage}
-                        />
-                    ))}
+                {/* Certifications Slider */}
+                <div className="relative">
+                    {/* Left Arrow */}
+                    <button
+                        onClick={handlePrev}
+                        className="absolute -left-16 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 cursor-pointer"
+                    >
+                        <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    {/* Right Arrow */}
+                    <button
+                        onClick={handleNext}
+                        className="absolute -right-16 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 cursor-pointer"
+                    >
+                        <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+
+                    <div className="overflow-hidden">
+                        <div 
+                            className="flex transition-transform duration-500 ease-in-out"
+                            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                        >
+                        {Array.from({ length: totalSlides }).map((_, slideIndex) => (
+                            <div key={slideIndex} className="min-w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                {certificationsData
+                                    .slice(slideIndex * cardsPerView, (slideIndex + 1) * cardsPerView)
+                                    .map((certification) => (
+                                        <CertificationCard
+                                            key={certification.id}
+                                            id={certification.id}
+                                            organizationName={certification.organizationName}
+                                            organizationLogo={certification.organizationLogo}
+                                            courseName={certification.courseName}
+                                            certificationImage={certification.certificationImage}
+                                        />
+                                    ))
+                                }
+                            </div>
+                        ))}
+                        </div>
+                    </div>
+                    
+                    {/* Dots Indicator */}
+                    <div className="flex justify-center gap-2 mt-8">
+                        {Array.from({ length: totalSlides }).map((_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => handleDotClick(index)}
+                                className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                                    index === currentIndex ? 'bg-blue-500 w-8' : 'bg-gray-300'
+                                }`}
+                            />
+                        ))}
+                    </div>
                 </div>
 
-                {/* Optional: View All Button */}
-                <div className="flex justify-center mt-12">
-                    <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                        View All Certifications
-                    </button>
-                </div>
             </div>
         </section>
     );
