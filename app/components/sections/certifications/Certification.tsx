@@ -5,14 +5,14 @@ import { certificationsData } from '@/app/components/sections/certifications/cer
 
 const Certifications: React.FC = () => {
     return (
-        <section className="py-20 px-6 md:px-12 bg-linear-to-b from-white via-blue-50/30 to-white dark:from-gray-50 dark:via-gray-400 dark:to-gray-400">
+        <section className="py-20 px-6 md:px-12 bg-linear-to-b from-white via-blue-50/30 to-white dark:from-gray-50 dark:via-blue-100 dark:to-gray-50">
                 {/* Styled horizontal line */}
                 <div className="flex items-center mb-20">
-                    <div className="flex-grow border-t-2 border-gray-300"></div>
+                    <div className="grow border-t-2 border-gray-300"></div>
                     <div className="mx-4">
                         <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
                     </div>
-                    <div className="flex-grow border-t-2 border-gray-300"></div>
+                    <div className="grow border-t-2 border-gray-300"></div>
                 </div>
 
                 <div className="max-w-6xl mx-auto">

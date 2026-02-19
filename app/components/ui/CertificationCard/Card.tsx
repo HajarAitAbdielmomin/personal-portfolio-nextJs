@@ -20,12 +20,12 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
 
     return (
         <div
-            className="group relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
             {/* Certification Image */}
-            <div className="relative h-64 bg-gray-200 dark:bg-gray-700 overflow-hidden">
+            <div className="relative h-64 bg-gray-100 overflow-hidden">
                 <Image
                     src={certificationImage}
                     alt={courseName}
@@ -34,17 +34,17 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
                 />
                 {/* Overlay on hover */}
                 <div
-                    className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${
+                    className={`absolute inset-0 bg-black/20 transition-opacity duration-300 ${
                         isHovered ? 'opacity-100' : 'opacity-0'
                     }`}
                 />
             </div>
 
             {/* Card Content */}
-            <div className="p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900">
+            <div className="p-6 bg-linear-to-br from-blue-50 to-purple-50">
                 {/* Organization Logo and Name */}
                 <div className="flex items-center gap-3 mb-4">
-                    <div className="relative w-12 h-12 bg-white dark:bg-gray-700 rounded-lg overflow-hidden flex-shrink-0">
+                    <div className="relative w-12 h-12 bg-white rounded-lg overflow-hidden shrink-0 shadow-sm">
                         <Image
                             src={organizationLogo}
                             alt={organizationName}
@@ -53,14 +53,14 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
                         />
                     </div>
                     <div className="flex-1 min-w-0">
-                        <p className="text-sm font-semibold text-gray-600 dark:text-gray-400 truncate">
+                        <p className="text-sm font-semibold text-gray-600 truncate">
                             {organizationName}
                         </p>
                     </div>
                 </div>
 
                 {/* Course Name */}
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 line-clamp-3">
+                <h3 className="text-lg font-bold text-gray-900 mb-4 line-clamp-3">
                     {courseName}
                 </h3>
 
