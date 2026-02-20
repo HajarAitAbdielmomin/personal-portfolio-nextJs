@@ -7,33 +7,34 @@ export interface Certification {
 }
 
 export const certificationsData: Certification[] = [
+
     {
         id: '1',
-        organizationName: 'Coursera - AWS',
-        organizationLogo: '/logo/organizations/coursera.jpg',
-        courseName: 'AWS Cloud Technical Essentials',
-        certificationImage: '/certificates/aws.jpg',
-    },
-    {
-        id: '2',
         organizationName: 'Oracle',
         organizationLogo: '/logo/organizations/oracle.png',
         courseName: 'Oracle Certified Professional: Java SE 17 Developer',
         certificationImage: '/certificates/java17.jpg',
     },
     {
-        id: '3',
+        id: '2',
         organizationName: 'Huawei',
         organizationLogo: '/logo/organizations/huawei.png',
         courseName: 'Huawei Certified Specialist Associate Sales-IP Network',
         certificationImage: '/certificates/huawei.jpg',
     },
     {
-        id: '4',
+        id: '3',
         organizationName: 'Simplilearn',
         organizationLogo: '/logo/organizations/simplilearn.jpg',
         courseName: 'Getting Started with JUnit',
         certificationImage: '/certificates/junit.jpg',
+    },
+    {
+        id: '4',
+        organizationName: 'Coursera - AWS',
+        organizationLogo: '/logo/organizations/coursera.jpg',
+        courseName: 'AWS Cloud Technical Essentials',
+        certificationImage: '/certificates/aws.jpg',
     },
     {
         id: '5',
@@ -69,6 +70,6 @@ export const certificationsData: Certification[] = [
         organizationName: 'Simplilearn',
         organizationLogo: '/logo/organizations/simplilearn.jpg',
         courseName: 'Containerization Basics with Docker',
-        certificationImage: '/certifications/docker.jpg',
+        certificationImage: '/certificates/docker.jpg',
     },
 ];
