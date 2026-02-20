@@ -24,7 +24,7 @@ export default function EducationCard({
                                           footerText,
                                       }: EducationCardProps) {
     return (
-        <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow">
+        <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow flex flex-col h-full">
             {/* Header */}
             <div className="flex items-start justify-between mb-4">
                 {/* Logo */}
@@ -51,7 +51,7 @@ export default function EducationCard({
             </div>
 
             {/* School Info */}
-            <div className="mb-4">
+            <div className="mb-4 flex-1">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">{schoolName}</h3>
                 <p className="text-sm text-gray-500 mb-3">{location}</p>
                 <h4 className="text-lg font-semibold text-gray-800 mb-2">{degree}</h4>
@@ -65,7 +65,7 @@ export default function EducationCard({
             </div>
 
             {/* Footer */}
-            <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+            <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-auto">
                 <div>
                     <p className="text-sm text-gray-500">{footerText || `${startYear} - ${endYear}`}</p>
                 </div>
