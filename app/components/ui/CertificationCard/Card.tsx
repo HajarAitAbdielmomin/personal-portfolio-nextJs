@@ -20,7 +20,7 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
 
     return (
         <div
-            className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -41,7 +41,7 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
             </div>
 
             {/* Card Content */}
-            <div className="p-6 bg-linear-to-br from-blue-50 to-purple-50">
+            <div className="p-6 bg-linear-to-br from-blue-50 to-purple-50 flex-1">
                 {/* Organization Logo and Name */}
                 <div className="flex items-center gap-3 mb-4">
                     <div className="relative w-12 h-12 bg-white rounded-lg overflow-hidden shrink-0 shadow-sm">
@@ -64,18 +64,10 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
                     {courseName}
                 </h3>
 
-                {/* View Certificate Button */}
-                <button
-                    className={`w-full py-2.5 px-4 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold rounded-lg transition-all duration-300 transform ${
-                        isHovered ? 'translate-y-0 opacity-100' : 'translate-y-1 opacity-90'
-                    }`}
-                >
-                    View Certificate
-                </button>
             </div>
 
             {/* Badge indicator */}
-            <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+            <div className="absolute top-4 right-4 bg-linear-to-r from-blue-500 to-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
                 Certified
             </div>
         </div>
