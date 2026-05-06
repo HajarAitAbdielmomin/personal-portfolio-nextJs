@@ -21,7 +21,7 @@ export default function Education() {
                     <p className="text-sm text-gray-400 uppercase tracking-widest mb-2">
                         My journey
                     </p>
-                    <h2 className="text-5xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-4xl font-bold text-gray-900 mb-4">
                         Academic Path
                         <span className="block w-16 h-1 bg-blue-500 mx-auto mt-2"></span>
                     </h2>
