@@ -72,4 +72,11 @@ export const certificationsData: Certification[] = [
         courseName: 'Containerization Basics with Docker',
         certificationImage: '/certificates/docker.jpg',
     },
+    {
+        id: '10',
+        organizationName: 'Oracle',
+        organizationLogo: '/logo/organizations/oracle.png',
+        courseName: 'Oracle Certified Professional: Java SE 21 Developer',
+        certificationImage: '/certificates/Java21.jpg',
+    },
 ];
