@@ -77,6 +77,6 @@ export const certificationsData: Certification[] = [
         organizationName: 'Oracle',
         organizationLogo: '/logo/organizations/oracle.png',
         courseName: 'Oracle Certified Professional: Java SE 21 Developer',
-        certificationImage: '/certificates/Java21.jpg',
+        certificationImage: '/certificates/java21.jpg',
     },
 ];
