@@ -21,7 +21,7 @@ export const skillsData: SkillCategory[] = [
             {
                 id: 'java',
                 name: 'Java',
-                iconName: 'openjdk',
+                iconName: 'java',
                 category: 'Programming',
             },
             {
@@ -33,7 +33,7 @@ export const skillsData: SkillCategory[] = [
             {
                 id: 'javaee',
                 name: 'Java EE',
-                iconName: 'openjdk',
+                iconName: 'java',
                 category: 'Programming',
             },
         ],
@@ -52,7 +52,7 @@ export const skillsData: SkillCategory[] = [
             {
                 id: 'css',
                 name: 'CSS',
-                iconName: 'css',
+                iconName: 'css3',
                 category: 'Web & UI',
             },
             {
@@ -156,7 +156,7 @@ export const skillsData: SkillCategory[] = [
             {
                 id: 'plsql',
                 name: 'PL/SQL',
-                iconName: 'mysql',
+                iconName: 'oracle',
                 category: 'Databases',
             },
         ],
@@ -169,7 +169,7 @@ export const skillsData: SkillCategory[] = [
             {
                 id: 'aws',
                 name: 'AWS',
-                iconName: 'docker',
+                iconName: 'amazonaws',
                 category: 'Cloud & DevOps',
             },
             {

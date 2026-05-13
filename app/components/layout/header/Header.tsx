@@ -16,7 +16,7 @@ export default function Header() {
                 {/* Logo */}
                 <div className="h-12 flex items-center">
                     <Image
-                        src="/images/hajar-logo.png"
+                        src="/logo/hajar-logo.png"
                         alt="hajar logo"
                         width={100}
                         height={2}
