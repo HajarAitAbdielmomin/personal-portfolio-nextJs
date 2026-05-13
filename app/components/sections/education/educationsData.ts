@@ -3,7 +3,7 @@ import {Education} from "@/app/types/dataType";
 
 export const educationsData: Education[] = [
     {
-        logo: 'logo/school-logo/bts.png',
+        logo: '/logo/school-logo/bts.png',
         schoolName: 'Ibn Sina Technical High School - BTS',
         location: 'Kenitra, Morocco',
         degree: 'Higher Technician Certificate',
@@ -13,7 +13,7 @@ export const educationsData: Education[] = [
         isGraduated: true,
     },
     {
-        logo: 'logo/school-logo/UIT.png',
+        logo: '/logo/school-logo/UIT.png',
         schoolName: 'Ibn Tofail University - Faculty of Sciences',
         location: 'Kenitra, Morocco',
         degree: 'Bachelor’s Degree',
@@ -23,7 +23,7 @@ export const educationsData: Education[] = [
         isGraduated: true,
     },
     {
-        logo: 'logo/school-logo/ensa.png',
+        logo: '/logo/school-logo/ensa.png',
         schoolName: 'The National School of Applied Sciences',
         location: 'Berrechid, Morocco',
         degree: 'Engineer’s Degree',
