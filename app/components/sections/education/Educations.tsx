@@ -1,5 +1,5 @@
 import EducationCard from "@/app/components/ui/EducationCard/Card";
-import {educationsData} from "@/app/components/sections/education/educationsData";
+import {educationsData} from "@/app/lib/data";
 
 export default function Education() {
 

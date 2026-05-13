@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import CertificationCard from '@/app/components/ui/CertificationCard/Card';
-import { certificationsData } from '@/app/components/sections/certifications/certificationsData';
+import { certificationsData } from '@/app/lib/data';
 
 const Certifications: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

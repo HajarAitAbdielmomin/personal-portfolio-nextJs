@@ -1,6 +1,6 @@
 import React from 'react';
 import InternshipCard from '@/app/components/ui/InternshipCard/Card';
-import { internshipsData } from '@/app/components/sections/internships/internshipsData';
+import { internshipsData } from '@/app/lib/data';
 
 const Internships: React.FC = () => {
     return (
