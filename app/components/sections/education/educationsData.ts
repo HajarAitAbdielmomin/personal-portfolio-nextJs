@@ -1,14 +1,5 @@
-export interface Education {
-    logo: string;
-    schoolName: string;
-    location: string;
-    degree: string;
-    major: string;
-    startYear: string;
-    endYear: string;
-    isGraduated?: boolean;
-    footerText?: string;
-}
+import {Education} from "@/app/types/dataType";
+
 
 export const educationsData: Education[] = [
     {

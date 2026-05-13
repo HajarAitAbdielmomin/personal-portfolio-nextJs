@@ -1,19 +1,5 @@
-export interface Internship {
-    id: string;
-    position: string;
-    company: string;
-    companyLogo: string;
-    location: string;
-    startDate: string;
-    endDate: string;
-    tasks: string[];
-    technologies: string[];
-    uiImages?: string[];
-    status: 'completed' | 'in-progress' | 'upcoming';
-    topic?: string;
-    width: number;
-    height: number;
-}
+import {Internship} from "@/app/types/dataType";
+
 
 export const internshipsData: Internship[] = [
     {

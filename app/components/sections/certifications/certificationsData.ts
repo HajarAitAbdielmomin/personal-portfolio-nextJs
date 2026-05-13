@@ -1,10 +1,5 @@
-export interface Certification {
-    id: string;
-    organizationName: string;
-    organizationLogo: string;
-    courseName: string;
-    certificationImage: string;
-}
+import {Certification} from "@/app/types/dataType";
+
 
 export const certificationsData: Certification[] = [
 
