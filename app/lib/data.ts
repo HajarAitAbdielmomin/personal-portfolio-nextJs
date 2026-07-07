@@ -106,6 +106,20 @@ export const certificationsData: Certification[] = [
         courseName: 'Oracle Certified Professional: Java SE 21 Developer',
         certificationImage: '/certificates/java21.jpg',
     },
+    {
+        id: '11',
+        organizationName: 'Coursera',
+        organizationLogo: '/logo/organizations/coursera.jpg',
+        courseName: 'Working with BigQuery for fast data analysis',
+        certificationImage: '/certificates/bigQuery.jpg',
+    },
+    {
+        id: '12',
+        organizationName: 'Forage',
+        organizationLogo: '/logo/organizations/forage.png',
+        courseName: 'Skyscanner Front-End Software Engineering virtual experience programme on Forage',
+        certificationImage: '/certificates/skyscanner.jpg',
+    },
 ];
 
 export const educationsData: Education[] = [
