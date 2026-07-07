@@ -3,15 +3,13 @@ import {Education} from "@/app/types/dataType";
 import {Internship} from "@/app/types/dataType";
 import {
     SiSpringboot, SiSpring,
-    SiReact, SiNextdotjs, SiJavascript, SiAngular, SiTypescript,
+    SiReact, SiNextdotjs, SiAngular, SiTypescript,
     SiDocker, SiGit,
     SiMysql,
-    SiJunit5,
     SiSwagger,
-    SiJira,
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
-import { TbBrandOpenai, TbApi, TbBinaryTree2, TbBrandAws } from 'react-icons/tb';
+import { TbBrandOpenai, TbApi, TbBrandAws } from 'react-icons/tb';
 
 
 export const skillGroups = [
