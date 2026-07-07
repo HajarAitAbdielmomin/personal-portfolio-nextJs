@@ -1,8 +1,40 @@
 import {Certification} from "@/app/types/dataType";
 import {Education} from "@/app/types/dataType";
 import {Internship} from "@/app/types/dataType";
+import {
+    SiSpringboot, SiSpring,
+    SiReact, SiNextdotjs, SiJavascript, SiAngular, SiTypescript,
+    SiDocker, SiGit,
+    SiMysql,
+    SiJunit5,
+    SiSwagger,
+    SiJira,
+} from 'react-icons/si';
+import { FaJava } from 'react-icons/fa';
+import { TbBrandOpenai, TbApi, TbBinaryTree2, TbBrandAws } from 'react-icons/tb';
 
 
+export const skillGroups = [
+
+            { index: 0, name: 'Java', icon: FaJava, color: '#007396' },
+            { index: 1, name: 'Spring Boot', icon: SiSpringboot, color: '#6DB33F' },
+            { index: 2, name: 'Spring Security', icon: SiSpring, color: '#6DB33F' },
+            { index: 3, name: 'Spring AI', icon: TbBrandOpenai, color: '#6DB33F' },
+            { index: 4, name: 'REST APIs', icon: TbApi, color: '#374151' },
+
+            { index: 5, name: 'ReactJS', icon: SiReact, color: '#61DAFB' },
+            { index: 6, name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+            { index: 7, name: 'Angular', icon: SiAngular, color: '#DD0031' },
+            { index: 8, name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
+            { index: 9, name: 'MySQL', icon: SiMysql, color: '#4479A1' },
+
+
+            { index: 10, name: 'AWS', icon: TbBrandAws, color: '#FF9900' },
+            { index: 11, name: 'Docker', icon: SiDocker, color: '#2496ED' },
+            { index: 12, name: 'Git', icon: SiGit, color: '#F05032' },
+            { index: 13, name: 'Swagger', icon: SiSwagger, color: '#85EA2D' },
+
+];
 export const certificationsData: Certification[] = [
 
     {

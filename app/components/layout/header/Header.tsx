@@ -69,7 +69,7 @@ export default function Header() {
                     </li>
                     <li>
                         <button
-                            onClick={() => scrollToSection('skill')}
+                            onClick={() => scrollToSection('skills')}
                             className="text-gray-700 font-medium hover:text-blue-600 transition-colors cursor-pointer"
                         >
                             Skills
