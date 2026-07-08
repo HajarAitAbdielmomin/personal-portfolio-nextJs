@@ -3,6 +3,7 @@ import Education from "@/app/components/sections/education/Educations";
 import Internships from "@/app/components/sections/internships/Internships";
 import Certifications from "@/app/components/sections/certifications/Certification";
 import Skills from "@/app/components/sections/skills/Skills";
+import Contact from "@/app/components/sections/contact/Contact"
 
 export default function Page() {
     return (
@@ -12,6 +13,7 @@ export default function Page() {
             <Internships />
             <Certifications />
             <Skills />
+            <Contact />
         </main>
     );
 }
