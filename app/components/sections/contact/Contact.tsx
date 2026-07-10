@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import {
     FaBuilding, FaEnvelope, FaPhoneAlt,
-    FaFacebookF, FaInstagram, FaTwitter, FaYoutube,
+    FaMediumM, FaLinkedin, FaGithub,
 } from 'react-icons/fa';
 
 export default function Contact() {
@@ -38,10 +38,9 @@ export default function Contact() {
     };
 
     const socials = [
-        { icon: FaFacebookF, href: 'https://facebook.com' },
-        { icon: FaInstagram, href: 'https://instagram.com' },
-        { icon: FaTwitter, href: 'https://twitter.com' },
-        { icon: FaYoutube, href: 'https://youtube.com' },
+        { icon:  FaMediumM, href: 'https://facebook.com' },
+        { icon: FaLinkedin, href: 'https://instagram.com' },
+        { icon: FaGithub, href: 'https://twitter.com' },
     ];
 
     return (
@@ -74,7 +73,7 @@ export default function Contact() {
                     <div className="p-8 md:p-10 border-b lg:border-b-0 lg:border-r border-gray-100">
                         <h3 className="text-2xl font-bold text-gray-900 mb-3">Get in touch</h3>
                         <p className="text-sm text-gray-500 mb-8 leading-relaxed">
-                            Feel free to reach out through any of the channels below — I'll respond as soon as I can.
+                            Feel free to reach out through any of the channels below, I'll respond as soon as I can.
                         </p>
 
                         <div className="space-y-6">
@@ -84,7 +83,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <p className="font-semibold text-gray-900 text-sm">Based In</p>
-                                    <p className="text-sm text-gray-500">New York, USA</p>
+                                    <p className="text-sm text-gray-500">Kenitra, Morocco</p>
                                 </div>
                             </div>
 
@@ -93,9 +92,9 @@ export default function Contact() {
                                     <FaEnvelope size={16} />
                                 </div>
                                 <div>
-                                    <p className="font-semibold text-gray-900 text-sm">Email Us</p>
-                                    <p className="text-sm text-gray-500">hello@example.com</p>
-                                    <p className="text-sm text-gray-500">support@example.com</p>
+                                    <p className="font-semibold text-gray-900 text-sm">Email Me</p>
+                                    <p className="text-sm text-gray-500">hajar.aitabdielmomin@gmail.com</p>
+
                                 </div>
                             </div>
 
@@ -104,8 +103,8 @@ export default function Contact() {
                                     <FaPhoneAlt size={16} />
                                 </div>
                                 <div>
-                                    <p className="font-semibold text-gray-900 text-sm">Call Us</p>
-                                    <p className="text-sm text-gray-500">Phone: +1 123 123 4567</p>
+                                    <p className="font-semibold text-gray-900 text-sm">Call Me</p>
+                                    <p className="text-sm text-gray-500">Phone: +212 601 409071</p>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +129,7 @@ export default function Contact() {
 
                     {/* Right - Send message form */}
                     <div className="p-8 md:p-10">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a message</h3>
+                        <h3 className="text-2xl font-bold text-gray-900 mb-6">Send me a message</h3>
 
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
