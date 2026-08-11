@@ -12,6 +12,57 @@ import { FaJava } from 'react-icons/fa';
 import { TbBrandOpenai, TbApi, TbBrandAws } from 'react-icons/tb';
 
 
+ export const projects = [
+        {
+            title: 'E-Commerce Microservices Platform',
+            description: 'A scalable e-commerce backend built with Spring Boot microservices, event-driven communication, and full Docker/AWS deployment pipeline.',
+            tags: ['Spring Boot', 'Microservices', 'Docker', 'AWS', 'MySQL'],
+            screenshots: [
+                'linear-gradient(135deg, #2563eb, #1e40af)',
+                'linear-gradient(135deg, #3b82f6, #1d4ed8)',
+                'linear-gradient(135deg, #60a5fa, #2563eb)',
+                'linear-gradient(135deg, #1e3a8a, #1e40af)',
+                'linear-gradient(135deg, #1d4ed8, #172554)',
+            ],
+            architecture: [
+                'linear-gradient(135deg, #0ea5e9, #0369a1)',
+                'linear-gradient(135deg, #38bdf8, #0284c7)',
+            ],
+            github: '#', live: '#', featured: true,
+        },
+        {
+            title: 'Real-Time Chat Application',
+            description: 'A full-stack chat app with WebSocket-based real-time messaging, JWT authentication, and a responsive React/Next.js interface.',
+            tags: ['React', 'Next.js', 'TypeScript', 'WebSocket'],
+            screenshots: [
+                'linear-gradient(135deg, #6366f1, #4338ca)',
+                'linear-gradient(135deg, #818cf8, #4f46e5)',
+                'linear-gradient(135deg, #4338ca, #312e81)',
+                'linear-gradient(135deg, #a5b4fc, #6366f1)',
+                'linear-gradient(135deg, #4f46e5, #1e1b4b)',
+            ],
+            architecture: [],
+            github: '#', live: '#', featured: false,
+        },
+        {
+            title: 'AI-Powered Content Assistant',
+            description: 'A Spring AI-integrated tool that generates and summarizes content using LLMs, paired with a clean React frontend.',
+            tags: ['Spring AI', 'React', 'REST API'],
+            screenshots: [
+                'linear-gradient(135deg, #0891b2, #155e75)',
+                'linear-gradient(135deg, #22d3ee, #0e7490)',
+                'linear-gradient(135deg, #06b6d4, #164e63)',
+                'linear-gradient(135deg, #67e8f9, #0891b2)',
+                'linear-gradient(135deg, #0e7490, #083344)',
+            ],
+            architecture: [
+                'linear-gradient(135deg, #0284c7, #075985)',
+                'linear-gradient(135deg, #0ea5e9, #0c4a6e)',
+                'linear-gradient(135deg, #38bdf8, #075985)',
+            ],
+            github: '#', live: '#', featured: true,
+        },
+    ];
 export const skillGroups = [
 
             { index: 0, name: 'Java', icon: FaJava, color: '#007396' },
