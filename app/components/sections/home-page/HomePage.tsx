@@ -75,7 +75,7 @@ export default function HomePage() {
                             {/* Profile Image */}
                             <div className="relative w-80 h-80 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300">
                                 <Image
-                                    src="/images/profile-photo.png"
+                                    src="/images/photo.png"
                                     alt="AitHajar"
                                     fill
                                     className="object-cover"
